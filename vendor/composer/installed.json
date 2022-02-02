@@ -314,6 +314,79 @@
             "install-path": "../doctrine/instantiator"
         },
         {
+            "name": "hashids/hashids",
+            "version": "4.1.0",
+            "version_normalized": "4.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vinkla/hashids.git",
+                "reference": "8cab111f78e0bd9c76953b082919fc9e251761be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vinkla/hashids/zipball/8cab111f78e0bd9c76953b082919fc9e251761be",
+                "reference": "8cab111f78e0bd9c76953b082919fc9e251761be",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0 || ^9.4",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "suggest": {
+                "ext-bcmath": "Required to use BC Math arbitrary precision mathematics (*).",
+                "ext-gmp": "Required to use GNU multiple precision mathematics (*)."
+            },
+            "time": "2020-11-26T19:24:33+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Hashids\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Akimov",
+                    "email": "ivan@barreleye.com"
+                },
+                {
+                    "name": "Vincent Klaiber",
+                    "email": "hello@doubledip.se"
+                }
+            ],
+            "description": "Generate short, unique, non-sequential ids (like YouTube and Bitly) from numbers",
+            "homepage": "https://hashids.org/php",
+            "keywords": [
+                "bitly",
+                "decode",
+                "encode",
+                "hash",
+                "hashid",
+                "hashids",
+                "ids",
+                "obfuscate",
+                "youtube"
+            ],
+            "support": {
+                "issues": "https://github.com/vinkla/hashids/issues",
+                "source": "https://github.com/vinkla/hashids/tree/4.1.0"
+            },
+            "install-path": "../hashids/hashids"
+        },
+        {
             "name": "myclabs/deep-copy",
             "version": "1.10.2",
             "version_normalized": "1.10.2.0",
@@ -4284,6 +4357,65 @@
                 }
             ],
             "install-path": "../voku/portable-utf8"
+        },
+        {
+            "name": "voku/simple-active-record",
+            "version": "1.8.0",
+            "version_normalized": "1.8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/simple-active-record.git",
+                "reference": "38b11aa56edd49566c21bd29bed7540790013c5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/simple-active-record/zipball/38b11aa56edd49566c21bd29bed7540790013c5a",
+                "reference": "38b11aa56edd49566c21bd29bed7540790013c5a",
+                "shasum": ""
+            },
+            "require": {
+                "hashids/hashids": "~2.0 || ~3.0 || ~4.0",
+                "php": ">=7.0",
+                "voku/arrayy": "~7.0",
+                "voku/simple-mysqli": "~8.0"
+            },
+            "require-dev": {
+                "doctrine/dbal": "~2.0",
+                "phpunit/phpunit": "~6.0 || ~7.0"
+            },
+            "time": "2020-04-11T00:00:21+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "voku\\db\\": "src/voku/db/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Moelleken",
+                    "email": "lars@moelleken.org",
+                    "homepage": "https://github.com/voku",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple Active Record",
+            "homepage": "https://github.com/voku/simple-active-record",
+            "keywords": [
+                "Active Record",
+                "db",
+                "php",
+                "simple db"
+            ],
+            "support": {
+                "issues": "https://github.com/voku/simple-active-record/issues",
+                "source": "https://github.com/voku/simple-active-record/tree/master"
+            },
+            "install-path": "../voku/simple-active-record"
         },
         {
             "name": "voku/simple-cache",

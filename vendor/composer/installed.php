@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'f301be3bdd07bded4f0ba2bc9314a9b49916d973',
         'name' => '__root__',
         'dev' => true,
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'f301be3bdd07bded4f0ba2bc9314a9b49916d973',
             'dev_requirement' => false,
         ),
         'cakephp/core' => array(
@@ -63,6 +63,15 @@
             'aliases' => array(),
             'reference' => 'd56bf6102915de5702778fe20f2de3b2fe570b5b',
             'dev_requirement' => true,
+        ),
+        'hashids/hashids' => array(
+            'pretty_version' => '4.1.0',
+            'version' => '4.1.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../hashids/hashids',
+            'aliases' => array(),
+            'reference' => '8cab111f78e0bd9c76953b082919fc9e251761be',
+            'dev_requirement' => false,
         ),
         'myclabs/deep-copy' => array(
             'pretty_version' => '1.10.2',
@@ -578,6 +587,15 @@
             'install_path' => __DIR__ . '/../voku/portable-utf8',
             'aliases' => array(),
             'reference' => '82a714b5a4973974c1113e97b11c1044a8b8cb85',
+            'dev_requirement' => false,
+        ),
+        'voku/simple-active-record' => array(
+            'pretty_version' => '1.8.0',
+            'version' => '1.8.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../voku/simple-active-record',
+            'aliases' => array(),
+            'reference' => '38b11aa56edd49566c21bd29bed7540790013c5a',
             'dev_requirement' => false,
         ),
         'voku/simple-cache' => array(

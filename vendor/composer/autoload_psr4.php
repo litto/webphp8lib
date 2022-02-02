@@ -6,7 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'voku\\db\\' => array($vendorDir . '/voku/simple-mysqli/src/voku/db'),
+    'voku\\db\\' => array($vendorDir . '/voku/simple-mysqli/src/voku/db', $vendorDir . '/voku/simple-active-record/src/voku/db'),
     'voku\\cache\\' => array($vendorDir . '/voku/simple-cache/src/voku/cache'),
     'voku\\' => array($vendorDir . '/voku/phonetic-algorithms/src/voku', $vendorDir . '/voku/portable-ascii/src/voku', $vendorDir . '/voku/portable-utf8/src/voku', $vendorDir . '/voku/stop-words/src/voku'),
     'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/reflection-docblock/src', $vendorDir . '/phpdocumentor/type-resolver/src'),
@@ -33,6 +33,7 @@ return array(
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src/Prophecy'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'Phinx\\' => array($vendorDir . '/robmorgan/phinx/src/Phinx'),
+    'Hashids\\' => array($vendorDir . '/hashids/hashids/src'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
     'Cake\\Utility\\' => array($vendorDir . '/cakephp/utility'),
