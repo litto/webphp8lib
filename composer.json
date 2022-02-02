@@ -1,0 +1,9 @@
+{
+    "require-dev": {
+        "phpunit/phpunit": "9.5"
+    },
+    "require": {
+        "voku/simple-mysqli": "^8.3",
+        "robmorgan/phinx": "^0.12.10"
+    }
+}
