@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'f301be3bdd07bded4f0ba2bc9314a9b49916d973',
+        'reference' => 'ee88c4ee33c29303c17a30b5d49b18d46afb2221',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'f301be3bdd07bded4f0ba2bc9314a9b49916d973',
+            'reference' => 'ee88c4ee33c29303c17a30b5d49b18d46afb2221',
             'dev_requirement' => false,
         ),
         'cakephp/core' => array(
@@ -71,6 +71,15 @@
             'install_path' => __DIR__ . '/../hashids/hashids',
             'aliases' => array(),
             'reference' => '8cab111f78e0bd9c76953b082919fc9e251761be',
+            'dev_requirement' => false,
+        ),
+        'lablnet/encryption' => array(
+            'pretty_version' => '1.2',
+            'version' => '1.2.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../lablnet/encryption',
+            'aliases' => array(),
+            'reference' => '43b514ba0129088dc2b8793d6aa79da0536f8b7e',
             'dev_requirement' => false,
         ),
         'myclabs/deep-copy' => array(

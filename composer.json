@@ -5,6 +5,7 @@
     "require": {
         "voku/simple-mysqli": "^8.3",
         "robmorgan/phinx": "^0.12.10",
-        "voku/simple-active-record": "^1.8"
+        "voku/simple-active-record": "^1.8",
+        "lablnet/encryption": "^1.2"
     }
 }

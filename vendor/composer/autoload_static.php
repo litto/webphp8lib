@@ -69,6 +69,10 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
             'PhpParser\\' => 10,
             'Phinx\\' => 6,
         ),
+        'L' => 
+        array (
+            'Lablnet\\' => 8,
+        ),
         'H' => 
         array (
             'Hashids\\' => 8,
@@ -94,8 +98,8 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
     public static $prefixDirsPsr4 = array (
         'voku\\db\\' => 
         array (
-            0 => __DIR__ . '/..' . '/voku/simple-mysqli/src/voku/db',
-            1 => __DIR__ . '/..' . '/voku/simple-active-record/src/voku/db',
+            0 => __DIR__ . '/..' . '/voku/simple-active-record/src/voku/db',
+            1 => __DIR__ . '/..' . '/voku/simple-mysqli/src/voku/db',
         ),
         'voku\\cache\\' => 
         array (
@@ -205,6 +209,10 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
         'Phinx\\' => 
         array (
             0 => __DIR__ . '/..' . '/robmorgan/phinx/src/Phinx',
+        ),
+        'Lablnet\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lablnet/encryption/src',
         ),
         'Hashids\\' => 
         array (
