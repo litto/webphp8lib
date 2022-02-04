@@ -683,9 +683,6 @@ abstract class ActiveRecord extends Arrayy
         return false;
     }
 
-
-    
-
     /**
      * Reset the dirty data.
      *

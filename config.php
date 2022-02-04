@@ -1,9 +1,8 @@
 <?php
 use voku\db\DB;
-
-
 require_once 'vendor\autoload.php';
-include("lib\DotEnv.php");
+include("libs\DotEnv.php");
+require_once 'autoload.php';
 
 (new DotEnv(__DIR__ . '/.env'))->load();
 

@@ -1,7 +1,5 @@
 <?php
 
-namespace lib;
-
 class DotEnv
 {
     /**
@@ -45,3 +43,5 @@ class DotEnv
         }
     }
 }
+
+?>
