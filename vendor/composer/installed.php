@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'ee88c4ee33c29303c17a30b5d49b18d46afb2221',
+        'reference' => '1824657c34c5256460b86ab4e4a430a29ebb8e20',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,16 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'ee88c4ee33c29303c17a30b5d49b18d46afb2221',
+            'reference' => '1824657c34c5256460b86ab4e4a430a29ebb8e20',
+            'dev_requirement' => false,
+        ),
+        'ausi/slug-generator' => array(
+            'pretty_version' => 'v1.1.1',
+            'version' => '1.1.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../ausi/slug-generator',
+            'aliases' => array(),
+            'reference' => '4e761b08966c5d4aeecc1829ac997e5a5a29d231',
             'dev_requirement' => false,
         ),
         'cakephp/core' => array(
@@ -53,6 +62,15 @@
             'install_path' => __DIR__ . '/../cakephp/utility',
             'aliases' => array(),
             'reference' => '00410267c41036e20a43fbf0cb2ddedbd893a8a5',
+            'dev_requirement' => false,
+        ),
+        'delight-im/file-upload' => array(
+            'pretty_version' => 'v1.2.0',
+            'version' => '1.2.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../delight-im/file-upload',
+            'aliases' => array(),
+            'reference' => 'a793f4b9d6d2fc4ce57487c324a1547cce942cb6',
             'dev_requirement' => false,
         ),
         'doctrine/instantiator' => array(
@@ -246,6 +264,15 @@
             'provided' => array(
                 0 => '1.0',
             ),
+        ),
+        'rakit/validation' => array(
+            'pretty_version' => 'v1.4.0',
+            'version' => '1.4.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../rakit/validation',
+            'aliases' => array(),
+            'reference' => 'ff003a35cdf5030a5f2482299f4c93f344a35b29',
+            'dev_requirement' => false,
         ),
         'robmorgan/phinx' => array(
             'pretty_version' => '0.12.10',

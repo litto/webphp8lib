@@ -60,6 +60,10 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\Config\\' => 25,
         ),
+        'R' => 
+        array (
+            'Rakit\\Validation\\' => 17,
+        ),
         'P' => 
         array (
             'Psr\\SimpleCache\\' => 16,
@@ -80,6 +84,7 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
+            'Delight\\FileUpload\\' => 19,
             'DeepCopy\\' => 9,
         ),
         'C' => 
@@ -91,6 +96,7 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
         ),
         'A' => 
         array (
+            'Ausi\\SlugGenerator\\' => 19,
             'Arrayy\\' => 7,
         ),
     );
@@ -186,6 +192,10 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
         array (
             0 => __DIR__ . '/..' . '/symfony/config',
         ),
+        'Rakit\\Validation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rakit/validation/src',
+        ),
         'Psr\\SimpleCache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/simple-cache/src',
@@ -222,6 +232,10 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
         ),
+        'Delight\\FileUpload\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/delight-im/file-upload/src',
+        ),
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
@@ -241,6 +255,10 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
         'Cake\\Core\\' => 
         array (
             0 => __DIR__ . '/..' . '/cakephp/core',
+        ),
+        'Ausi\\SlugGenerator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ausi/slug-generator/src',
         ),
         'Arrayy\\' => 
         array (
