@@ -72,6 +72,7 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
             'Prophecy\\' => 9,
             'PhpParser\\' => 10,
             'Phinx\\' => 6,
+            'PHPUnitColors\\' => 14,
         ),
         'L' => 
         array (
@@ -80,6 +81,10 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
         'H' => 
         array (
             'Hashids\\' => 8,
+        ),
+        'E' => 
+        array (
+            'EasyCSRF\\' => 9,
         ),
         'D' => 
         array (
@@ -220,6 +225,10 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
         array (
             0 => __DIR__ . '/..' . '/robmorgan/phinx/src/Phinx',
         ),
+        'PHPUnitColors\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/1happyplace/phpunit-colors/src/PHPUnitColors',
+        ),
         'Lablnet\\' => 
         array (
             0 => __DIR__ . '/..' . '/lablnet/encryption/src',
@@ -227,6 +236,10 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
         'Hashids\\' => 
         array (
             0 => __DIR__ . '/..' . '/hashids/hashids/src',
+        ),
+        'EasyCSRF\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gilbitron/easycsrf/src',
         ),
         'Doctrine\\Instantiator\\' => 
         array (

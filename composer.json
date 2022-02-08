@@ -1,6 +1,7 @@
 {
     "require-dev": {
-        "phpunit/phpunit": "9.5"
+        "phpunit/phpunit": "9.5",
+        "1happyplace/phpunit-colors": "^1.2"
     },
     "require": {
         "voku/simple-mysqli": "^8.3",
@@ -10,6 +11,6 @@
         "rakit/validation": "^1.4",
         "delight-im/file-upload": "^1.2",
         "ausi/slug-generator": "^1.1",
-        "railto/flash-messages": "1.0.*"
+        "gilbitron/easycsrf": "^1.5"
     }
 }

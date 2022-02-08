@@ -2,8 +2,8 @@
 ob_start();
 session_start();
 use voku\db\DB;
-require_once 'vendor\autoload.php';
-include("libs\DotEnv.php");
+require_once '..\vendor\autoload.php';
+include("..\libs\DotEnv.php");
 require_once 'autoload.php';
 
 (new DotEnv(__DIR__ . '/.env'))->load();
