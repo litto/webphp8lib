@@ -1,0 +1,12 @@
+For Creating and Running Migrations
+...........................................
+
+php vendor/bin/phinx create MigrationFilename
+
+php vendor/bin/phinx migrate
+
+
+For  Doing Unit Testing
+.....................................
+
+php vendor/bin/phpunit tests
