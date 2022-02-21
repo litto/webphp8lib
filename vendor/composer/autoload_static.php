@@ -9,8 +9,8 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
     public static $files = array (
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
@@ -37,6 +37,10 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'Z' => 
+        array (
+            'ZxcvbnPhp\\' => 10,
+        ),
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
@@ -62,6 +66,7 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
         ),
         'R' => 
         array (
+            'ReCaptcha\\' => 10,
             'Rakit\\Validation\\' => 17,
         ),
         'P' => 
@@ -73,6 +78,8 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
             'PhpParser\\' => 10,
             'Phinx\\' => 6,
             'PHPUnitColors\\' => 14,
+            'PHPMailer\\PHPMailer\\' => 20,
+            'PHPAuth\\' => 8,
         ),
         'L' => 
         array (
@@ -128,6 +135,10 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+        ),
+        'ZxcvbnPhp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -197,6 +208,10 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
         array (
             0 => __DIR__ . '/..' . '/symfony/config',
         ),
+        'ReCaptcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha',
+        ),
         'Rakit\\Validation\\' => 
         array (
             0 => __DIR__ . '/..' . '/rakit/validation/src',
@@ -228,6 +243,14 @@ class ComposerStaticInit0a91311fce33e9cdea8bdfe517bcc772
         'PHPUnitColors\\' => 
         array (
             0 => __DIR__ . '/..' . '/1happyplace/phpunit-colors/src/PHPUnitColors',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
+        'PHPAuth\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpauth/phpauth',
         ),
         'Lablnet\\' => 
         array (

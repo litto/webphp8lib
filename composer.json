@@ -11,6 +11,7 @@
         "rakit/validation": "^1.4",
         "delight-im/file-upload": "^1.2",
         "ausi/slug-generator": "^1.1",
-        "gilbitron/easycsrf": "^1.5"
+        "gilbitron/easycsrf": "^1.5",
+        "phpauth/phpauth": "dev-master"
     }
 }

@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'b098d518494a29ca1fe6b509b4ad51265a5fa6bf',
+        'reference' => '8f29d04187a15a0cbcad62107c876634355d6339',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -25,7 +25,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'b098d518494a29ca1fe6b509b4ad51265a5fa6bf',
+            'reference' => '8f29d04187a15a0cbcad62107c876634355d6339',
             'dev_requirement' => false,
         ),
         'ausi/slug-generator' => array(
@@ -35,6 +35,15 @@
             'install_path' => __DIR__ . '/../ausi/slug-generator',
             'aliases' => array(),
             'reference' => '4e761b08966c5d4aeecc1829ac997e5a5a29d231',
+            'dev_requirement' => false,
+        ),
+        'bjeavons/zxcvbn-php' => array(
+            'pretty_version' => '1.3.1',
+            'version' => '1.3.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../bjeavons/zxcvbn-php',
+            'aliases' => array(),
+            'reference' => '994928ae5b17ecff8baa2406832d37bdf01116c0',
             'dev_requirement' => false,
         ),
         'cakephp/core' => array(
@@ -100,6 +109,15 @@
             'reference' => 'e09c3726e33911663e88fb50e0c8030a445a7d92',
             'dev_requirement' => false,
         ),
+        'google/recaptcha' => array(
+            'pretty_version' => '1.2.4',
+            'version' => '1.2.4.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../google/recaptcha',
+            'aliases' => array(),
+            'reference' => '614f25a9038be4f3f2da7cbfd778dc5b357d2419',
+            'dev_requirement' => false,
+        ),
         'hashids/hashids' => array(
             'pretty_version' => '4.1.0',
             'version' => '4.1.0.0',
@@ -154,6 +172,17 @@
             'reference' => 'bae7c545bef187884426f042434e561ab1ddb182',
             'dev_requirement' => true,
         ),
+        'phpauth/phpauth' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpauth/phpauth',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'reference' => '98a57768082c0954cfd0d6a8ffff989d84599722',
+            'dev_requirement' => false,
+        ),
         'phpdocumentor/reflection-common' => array(
             'pretty_version' => '2.2.0',
             'version' => '2.2.0.0',
@@ -179,6 +208,15 @@
             'install_path' => __DIR__ . '/../phpdocumentor/type-resolver',
             'aliases' => array(),
             'reference' => '93ebd0014cab80c4ea9f5e297ea48672f1b87706',
+            'dev_requirement' => false,
+        ),
+        'phpmailer/phpmailer' => array(
+            'pretty_version' => 'v6.5.4',
+            'version' => '6.5.4.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpmailer/phpmailer',
+            'aliases' => array(),
+            'reference' => 'c0d9f7dd3c2aa247ca44791e9209233829d82285',
             'dev_requirement' => false,
         ),
         'phpspec/prophecy' => array(
