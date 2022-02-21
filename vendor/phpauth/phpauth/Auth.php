@@ -420,7 +420,6 @@ class Auth
 
     /**
      * Gets UID for a given email address or zero if email not found
-     
      * @param string $email
      * @return int $uid
      */
@@ -788,6 +787,37 @@ class Auth
         return $data;
     }
 
+ public  function getUserDetails(int $uid)
+    {
+        $query = "SELECT email, isactive FROM {$this->config->table_users} WHERE id = :id";
+        $query_prepared = $this->dbh->prepare($query);
+        $query_prepared->execute(['id' => $uid]);
+
+        $data = $query_prepared->fetch(PDO::FETCH_ASSOC);
+
+        if (!$data) {
+            return false;
+        }
+
+        $data['uid'] = $uid;
+
+        return $data;
+    }
+
+     public  function getEmailDetails(string $email)
+    {
+        $query = "SELECT *  FROM {$this->config->table_users} WHERE email = :email";
+        $query_prepared = $this->dbh->prepare($query);
+        $query_prepared->execute(['email' => $email]);
+
+        $data = $query_prepared->fetch(PDO::FETCH_ASSOC);
+
+        if (!$data) {
+            return false;
+        }
+
+        return $data;
+    }
     /**
      * Gets public user data for a given UID and returns an array, password will be returned if param $withpassword is TRUE
      * @param int $uid

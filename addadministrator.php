@@ -17,17 +17,16 @@ try {
    $errormsg= $e->getMessage();
      $message  =   new Message($errormsg,'error');
     $message->setMessage();
-header("Location:add.php");
+header("Location:addadministrator.php");
 exit;
 }
 
 $validator = new Validator;
 // make it
 $validation = $validator->make($_POST + $_FILES, [
-    'name'                  => 'required',
     'email'                 => 'required|email',
     'password'              => 'required|min:6',
-    'name'                  => 'required',
+    'cpassword'             => 'required|min:6',
 ]);
 
 // then validate
@@ -42,60 +41,25 @@ if ($validation->fails()) {
 
 } else {
 
+$config = new PHPAuth\Config($dbh);
+$auth   = new PHPAuth\Auth($dbh, $config);
+$return=$auth->register($_POST['email'],$_POST['password'],$_POST['cpassword']);
 
-$generator = new SlugGenerator;
-$slug=$generator->generate($_POST['username']);
-
-if($_FILES['txtFile']['name']!=''){
-
-
-  $upl=new Uploader();
-  $logo=$upl->uploadimagefile("txtFile");
-
-}
-
-
-
-$user = new User();
-
-$passwordentry=$_POST['password'];
-$key    =   rand(0,9999).rand(111,999);
-$encryption = new Encryption('openssl',$key);
-$password = $encryption->encrypt($passwordentry);
-
-$insert=array('username'=>$_POST['username'],'password'=>$password,'name'=>$_POST['name'],'email'=>$_POST['email'],'key'=>$key,'logo'=>$logo);
-$user_id=$user->addrecord($insert);
-
-
-//$user->username = $_POST['username'];
-// $user->password = $password;
-// $user->pass_key = $key;
-// $user->email = $_POST['email'];
-// $user->name = $_POST['name'];
-// $user->logo = $logo;
-// $user->date_create = date('Y-m-d H:i:s');
-// $user->type = 1;
-// $user->status = 1;
-// $user->ip = $_SERVER['REMOTE_ADDR'];
-// $user_id = $user->insert();
-
-
-
-
+$user_id=$return['uid'];
 if($user_id){
 
-$msg= "Record saved Successful  with id-".$user_id;
+$msg= "Admin Created Successful  with id-".$user_id;
    $message    =   new Message($msg,'success');
    $message->setMessage();
-header("Location:users.php");
+header("Location:administrators.php");
 exit;
 }else{
 
-$msg="Error Saving Records";
+$msg=$return['message'];
  $message    =   new Message($msg,'error');
  $message->setMessage();
 }
-header("Location:add.php");
+header("Location:addadministrator.php");
 exit;
 }
 
@@ -107,12 +71,12 @@ $token = $easyCSRF->generate('my_token');
 ?>
 <div class="container">
 
-    <div class="row">
+      <div class="row">
 <?php include("sidebar.php");  ?>
  
  <div class="col-md-9"> 
 
-	<form method="post" enctype="multipart/form-data" action="add.php">
+	<form method="post" enctype="multipart/form-data" action="addadministrator.php">
 		    <input type="hidden" name="token" value="<?php echo $token; ?>">
 		  <div class="form-group">
  <?php $message  =   new Message('','');
@@ -130,26 +94,13 @@ $token = $easyCSRF->generate('my_token');
     <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required="true">
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Username</label>
-    <input type="text" name="username" class="form-control" id="exampleInputPassword1" placeholder="Username" required="true">
+    <label for="exampleInputPassword1">Confirm Password</label>
+    <input type="password" name="cpassword" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password" required="true">
   </div>
 
-    <div class="form-group">
-    <label for="exampleInputPassword1">Full Name</label>
-    <input type="text" name="name" class="form-control" id="exampleInputPassword1" placeholder="Full Name" required="true">
-  </div>
-   <div class="form-group">
-    <label for="exampleFormControlFile1">Avatar</label>
-    <input type="file" class="form-control-file" name="txtFile" id="exampleFormControlFile1">
-  </div>
 
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
   <button type="submit" name="submit" class="btn btn-primary">Save</button>
 </form>
-
 </div>
 </div>
 <?php include("footer.php"); ?>

@@ -1,6 +1,6 @@
 <?php
 include("header.php");
-
+include("session.php");
 $id=base64_decode($_GET['id']);
  $user = new User();
  //$user->fetchById($id);
@@ -8,6 +8,6 @@ $id=base64_decode($_GET['id']);
 
  $user->deleterecord($id);
 
- header("Location:index.php");
+ header("Location:users.php");
  exit;
 ?>

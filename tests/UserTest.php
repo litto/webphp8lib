@@ -48,7 +48,7 @@ public function testUserAdd()
     {
 $disp=new Display();
 echo $disp->caution("Starting User Insert Testing!!");
-
+echo '</br>';
 $user5 = new User();
 $users=$user5->where('status=1')->fetchAll();
 $oldcount=count($users);    	
@@ -72,7 +72,10 @@ $this->assertEquals($this->key, $fetchrecord->pass_key,$disp->warning("Key Field
    $nowcount=count($userslist);
    $calcount=$oldcount+1;
    $this->assertEquals($calcount,$nowcount,$disp->warning("Count Not Equal"));
+   echo '</br>';
 echo $disp->OK("User Inserting Function is Working!!");
+echo '</br>';
+
 }
 
 
@@ -81,6 +84,7 @@ public function testUserEdit()
 
 $disp=new Display();
 echo $disp->caution("Starting User Edit  Testing!!");
+echo '</br>';
 $user1 = new User();
 $update=array('username'=>$this->newstrng,'password'=>$this->newpassword,'name'=>$this->newstrng,'email'=>$this->newemail,'key'=>$this->newkey,'logo'=>$this->newlogo);
 $this->newinsertedid=$user1->updaterecord($update,$_SESSION['insertid']);
@@ -91,7 +95,9 @@ $this->assertEquals($this->newstrng, $fetchrecord->name,$disp->warning("Name Fie
 $this->assertEquals($this->newemail, $fetchrecord->email,$disp->warning("Email Field failed"));
 $this->assertEquals($this->newpassword, $fetchrecord->password,$disp->warning("Password Field failed"));
 $this->assertEquals($this->newkey, $fetchrecord->pass_key,$disp->warning("Key Field failed"));
+echo '</br>';
 echo $disp->OK("User Inserting Function is Working!!");
+echo '</br>';
 }
 
 
@@ -99,6 +105,7 @@ public function testUserDelete()
 {
 	
 $disp=new Display();
+echo '</br>';
 echo $disp->caution("Starting User Delete  Testing!!");
 $user1 = new User();
 $user1->deleterecord($_SESSION['insertid']);
@@ -106,9 +113,12 @@ $user1->deleterecord($_SESSION['insertid']);
 $user34 = new User();
 $returnval=$user34->checkdetails($_SESSION['insertid']);
 $this->assertEquals(0, $returnval,$disp->warning("Delete Action failed"));
+echo '</br>';
 echo $disp->OK("User Deletion Function is Working!!");
 unset($_SERVER['insertid']);
+echo '</br>';
 echo $disp->OK("Module is Working Fine..!!");
+echo '</br>';
 }
 
 

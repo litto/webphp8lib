@@ -1,3 +1,10 @@
+Login-Details
+..................
+
+admin@admin.com
+Admin@2022
+
+
 For Creating and Running Migrations
 ...........................................
 

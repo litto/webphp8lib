@@ -1,5 +1,6 @@
 <?php
 include("header.php");
+include("session.php");
 use Lablnet\Encryption;
 use Rakit\Validation\Validator;
 use Ausi\SlugGenerator\SlugGenerator;
@@ -83,7 +84,7 @@ if($user_id){
 $msg= "Record Updated Successfully";
    $message    =   new Message($msg,'success');
    $message->setMessage();
-header("Location:index.php");
+header("Location:users.php");
 exit;
 }else{
 
@@ -109,6 +110,10 @@ $easyCSRF = new EasyCSRF\EasyCSRF($sessionProvider);
 $token = $easyCSRF->generate('my_token');
 ?>
 <div class="container">
+      <div class="row">
+<?php include("sidebar.php");  ?>
+ 
+ <div class="col-md-9"> 
 
 	<form method="post" enctype="multipart/form-data" action="edit.php?id=<?php echo $_GET['id'];?>">
 				    <input type="hidden" name="token" value="<?php echo $token; ?>">
@@ -154,6 +159,7 @@ $token = $easyCSRF->generate('my_token');
   </div>
   <button type="submit" name="submit" class="btn btn-primary">Save</button>
 </form>
+</div>
 </div>
 <?php include("footer.php"); ?>
 
