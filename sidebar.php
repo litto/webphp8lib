@@ -2,9 +2,7 @@
 <ul>
 <li><a href="index.php"> Dashboard</a> </li>
 <li><a href="users.php"> Users</a> </li>
-<li><a href="add.php"> Add User</a> </li>
-<li><a href="administrators.php"> Admins</a> </li>
-<li><a href="addadministrator.php"> Add Admins</a> </li>
+<li><a href="cms.php"> CMS</a> </li>
 <li><a href="logout.php"> Logout</a> </li>
 <ul>	
 
